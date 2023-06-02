@@ -68,13 +68,7 @@ public class ServidorEstoque {
                         } else {
                             writer.println("Produto não encontrado no estoque.");
                         }
-                    } else if (comando.equals("LISTAR")) {
-                        StringBuilder resposta = new StringBuilder();
-                        for (Produto produto : estoque.getProdutos()) {
-                            resposta.append(produto.getNome()).append(" - ").append(produto.getQuantidade()).append(" unidades\n");
-                        }
-                        writer.println(resposta.toString() + "\n");
-                    }else {
+                    } else {
                         writer.println("Comando inválido.");
                     }
                 }

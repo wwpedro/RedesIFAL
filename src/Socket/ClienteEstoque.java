@@ -29,9 +29,6 @@ public class ClienteEstoque {
                     case "2":
                         removerProduto(reader, writer, socketReader);
                         break;
-                    case "3":
-                        listarProdutos(socketReader);
-                        break;
                     case "0":
                         System.out.println("Encerrando o cliente...");
                         break;
@@ -50,7 +47,6 @@ public class ClienteEstoque {
         System.out.println("\nMenu do Cliente:");
         System.out.println("1. Adicionar produto");
         System.out.println("2. Remover produto");
-        System.out.println("3. Listar produtos");
         System.out.println("0. Sair");
         System.out.print("Digite a opção desejada: ");
     }
@@ -81,8 +77,4 @@ public class ClienteEstoque {
         System.out.println(resposta);
     }
 
-    private static void listarProdutos(BufferedReader socketReader) throws IOException {
-        System.out.println("\nProdutos no estoque:");
-        System.out.println(socketReader.readLine());
-    }
 }

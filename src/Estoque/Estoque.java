@@ -31,10 +31,6 @@ public class Estoque {
     public void removerProduto(Produto produto) {
         produtos.remove(produto);
     }
-
-    public List<Produto> getProdutos() {
-        return produtos;
-    }
     
     //usado para buscar por nome e remover por exemplo
     public Produto buscarProdutoPorNome(String nome) {
